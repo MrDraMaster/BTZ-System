@@ -2,16 +2,75 @@
   <dictionary name="gerla">
     <words>
       <w>abspath</w>
+      <w>addresse</w>
+      <w>addressen</w>
       <w>aeap</w>
       <w>anmeldelisten</w>
+      <w>bestell</w>
       <w>bestellsumme</w>
       <w>bestellsummen</w>
+      <w>bestellungsdaten</w>
+      <w>bestellungserfolgtext</w>
+      <w>bestätigungsemail</w>
+      <w>btzjessrv</w>
+      <w>checkboxen</w>
       <w>cronjob</w>
       <w>dateipfad</w>
+      <w>eingabeformular</w>
+      <w>eingabeformularen</w>
+      <w>emailaddresse</w>
+      <w>emailliste</w>
+      <w>emaillisten</w>
+      <w>erinnerungsemail</w>
+      <w>essenbestellen</w>
       <w>essensauswahl</w>
+      <w>essenskürzel</w>
+      <w>essenstyp</w>
+      <w>formulareinträge</w>
+      <w>gaeste</w>
       <w>gerlach</w>
       <w>kateg</w>
+      <w>kategoriebox</w>
+      <w>kochplan</w>
+      <w>kueche</w>
+      <w>mitarbeiternetz</w>
+      <w>nachbesteller</w>
+      <w>nachbestellungswoche</w>
+      <w>namensfeld</w>
+      <w>namenswahl</w>
+      <w>namentest</w>
+      <w>namenwahl</w>
+      <w>navbar</w>
+      <w>noedit</w>
+      <w>nofood</w>
+      <w>persoenlich</w>
+      <w>saeule</w>
+      <w>schonmal</w>
+      <w>schulnetz</w>
+      <w>shortcode</w>
+      <w>sozialpädagogen</w>
+      <w>speisekarten</w>
+      <w>speiseplaneintrag</w>
+      <w>speiseplans</w>
+      <w>speisepläne</w>
+      <w>speiseplänen</w>
+      <w>standardbestellung</w>
+      <w>strncmp</w>
+      <w>strpos</w>
+      <w>strtotime</w>
+      <w>säulenseite</w>
+      <w>tabellenbox</w>
       <w>tabellentext</w>
+      <w>tageskürzel</w>
+      <w>textfeld</w>
+      <w>ueber</w>
+      <w>vorausgefülltes</w>
+      <w>vorgefüllt</w>
+      <w>vortext</w>
+      <w>werkzeugleiste</w>
+      <w>wochenauswahl</w>
+      <w>wochennummer</w>
+      <w>wpdb</w>
       <w>zusatzstoffe</w>
     </words>
   </dictionary>

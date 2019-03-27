@@ -42,8 +42,8 @@ function kategorie_liste ( $kategorie ) {
 	// markiert Essen als ausgeteilt wenn Button gedrückt wurde
 	if ( isset($_POST['ausgeteilt_'.$kategorie]))
 	{
-		$html = hat_gegessen( $kategorie, $table, $heute);
-	}
+		$hat_gegessen = hat_gegessen( $kategorie, $table, $heute);
+	} else $hat_gegessen = '';
 	
 	// SQL-Query
 	$kategorie_liste = $wpdb->get_results("SELECT * FROM $table WHERE Kategorie = '$kategorie' ORDER BY Name", 'ARRAY_A' );
@@ -96,7 +96,7 @@ function kategorie_liste ( $kategorie ) {
 		</div>
 		<?php
 		// beendet output-buffering und übergibt Buffer an $html für Ausgabe
-		$html .= ob_get_clean();
+		$html = $hat_gegessen.ob_get_clean();
 	} else { $html = "<p>SQL Anfrage misslungen.</p>"; }
 	
 	return $html;

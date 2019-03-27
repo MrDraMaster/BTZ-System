@@ -41,7 +41,9 @@ function bestellliste_befehle_fct() {
 		<form action="#export" method="post">
 			<table><tbody><tr>
 			<td width=15%>Kalenderwoche:</td>
-			<td width=10%><input type="text" name="KW" value=""></td>
+			<td width=10%><label>
+                    <input type="text" name="KW" value="">
+                </label></td>
 			<td width=5%></td>
 			<td><input type="submit" name="Ausgabe" value="Bestellliste ausgeben"></td>
 			</tr></tbody></table>
@@ -146,9 +148,11 @@ function Speiseplan_Eingabe() {
 						<thead>
 							<tr>
 								<th>
-									Kalenderwoche:<br>
-									<input type="text" name="KW" value="">
-								</th>
+                                    <label>
+                                        Kalenderwoche:<br>
+                                        <input type="text" name="KW" value="">
+                                    </label>
+                                </th>
 								<?php for ( $i = 0; $i < 5; $i += 1)
 									{
 										echo "<th>".Variablen::$Tag_name[$i]."</th>";
@@ -337,7 +341,9 @@ function Speiseplan_Anzeigen() {
 			<form action="#anzeige" method="post" name="Speiseplan_anzeigen" autocomplete="off">
 				<table><tbody><tr>
 				<td width=15%>Kalenderwoche:</td>
-				<td width=10%><input type="text" name="Kalenderwoche" value=""></td>
+				<td width=10%><label>
+                        <input type="text" name="Kalenderwoche" value="">
+                    </label></td>
 				<td width=5%></td>
 				<td><input type="submit" name="Speiseplan_anzeigen" value="Speiseplan anzeigen und ändern" /></td>
 				</tr></tbody></table>
@@ -454,7 +460,9 @@ function Speiseplan_Anzeigen() {
 					}				
 					?>	
 					<div class="hidden">
-						<input type="text" name="Kalenderwoche" value="<?php echo $KW; ?>"> <!-- verstecktes Textfeld zur Übergabe der $KW bei Knopfdruck-->
+                        <label>
+                            <input type="text" name="Kalenderwoche" value="<?php echo $KW; ?>">
+                        </label> <!-- verstecktes Textfeld zur Übergabe der $KW bei Knopfdruck-->
 					</div>
 					<input type="submit" name="Speiseplan_edit" value="Speiseplan speichern" />
 				</div>
@@ -547,7 +555,9 @@ function speiseplan_export_fct() {
 		<form action="#export" method="post">
 			<table><tbody><tr>
 			<td width=15%>Kalenderwoche:</td>
-			<td width=10%><input type="text" name="KW" value=""></td>
+			<td width=10%><label>
+                    <input type="text" name="KW" value="">
+                </label></td>
 			<td width=5%></td>
 			<td><input type="submit" name="Export" value="Speiseplan ausgeben"></td>
 			</tr></tbody></table>
@@ -651,7 +661,9 @@ function Gaeste_Essen () {
 		<form action="#gaeste" method="post">
 			<table><tbody><tr>
 			<td width=15%>Kalenderwoche:</td>
-			<td width=10%><input type="text" name="Kalenderwoche" value=""></td>
+			<td width=10%><label>
+                    <input type="text" name="Kalenderwoche" value="">
+                </label></td>
 			<td width=5%></td>
 			<td><input type="submit" name="Gaeste" value="Gäste-Essen eintragen"></td>
 			</tr></tbody></table>

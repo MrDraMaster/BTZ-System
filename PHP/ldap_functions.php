@@ -85,7 +85,8 @@ function LDAP_Abfrage ( $Gruppe ) {
 		$user = 'ldap';
 		$password = '123456';
 		// Einloggen von $user in $Verbindung
-		$login = ldap_bind($Verbindung, $user, $password);
+//		$login = ldap_bind($Verbindung, $user, $password);
+		ldap_bind($Verbindung, $user, $password);
 		
 		// Fallunterscheidung nach $Gruppe
 		switch ($Gruppe)

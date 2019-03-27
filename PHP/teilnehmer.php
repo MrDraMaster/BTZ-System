@@ -19,16 +19,20 @@ function Neue_Teilnehmer_Runde ( $modus ) { // $modus = Auster, BT, BVB
 	?>
 	<div>
 		<div>
-			<h3 id='standard'>Für wieviele neue <?php echo $modus; ?>-Teilnehmer soll in welcher Kalenderwoche für Montag nichts und Dienstag und Mittwoch Vegetarisch bestellt werden?</h3>
+			<h3 id='standard'>Für wie viele neue <?php echo $modus; ?>-Teilnehmer soll in welcher Kalenderwoche für Montag nichts und Dienstag und Mittwoch Vegetarisch bestellt werden?</h3>
 		</div>
 		<form action="#standard" method="post">
 			<table>
 				<thead>
 					<tr>
-						<th>Kalenderwoche:</th>
-						<th><input type="text" name="KW" value=""></th>
-						<th>Anzahl neuer Teilnehmer:</th>
-						<th><input type="text" name="ANZ" value=""></th>
+						<th><label>
+                                Kalenderwoche:
+                                <input type="text" name="KW" value="">
+                            </label></th>
+						<th><label>
+                                Anzahl neuer Teilnehmer:
+                                <input type="text" name="ANZ" value="">
+                            </label></th>
 						<th><input type="submit" name="Standard" value="Teilnehmer Standardbestellung"></th>
 					</tr>
 				</thead>

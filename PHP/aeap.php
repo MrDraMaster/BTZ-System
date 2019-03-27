@@ -19,7 +19,7 @@ function Neue_AEAP_Runde () {
 	?>
 	<div>
 		<div>
-			<h3 id='standard'>Für wieviele neue AEAP-Teilnehmer soll in welcher Kalenderwoche für Montag und Dienstag Vegetarisch bestellt werden?</h3>
+			<h3 id='standard'>Für wie viele neue AEAP-Teilnehmer soll in welcher Kalenderwoche für Montag und Dienstag Vegetarisch bestellt werden?</h3>
 		</div>
 		<form action="#standard" method="post">
 			<table>

@@ -114,6 +114,7 @@ function wer_hat_nicht_bestellt ( $Kategorie ) {
 			</html>
 			';
 			
-		$flag = wp_mail( $mail, $betreff, $text, $header );
+//		$flag = wp_mail( $mail, $betreff, $text, $header );
+		wp_mail( $mail, $betreff, $text, $header );
 	}
 }
