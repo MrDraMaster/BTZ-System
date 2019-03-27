@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
     
     // wenn Kategorie sich ändert:
     $('#Kategorie').change( function(){
-        var value = this.value;
+        let value = this.value;
         
         switch(value)
         {

@@ -113,6 +113,8 @@ function Bestell_Formular ( $modus ) { // $modus = 'teilnehmer', 'saeule', 'nach
 				$welche_woche = '<h3 id="bestellung">Bestellung für die übernächste Woche ['.Woche_Ausgabe($Flag_Woche).']</h3>';
 				if ( 'nach' != $modus ) $welche_woche .= '<p>Für Nachbestellungen oder Änderungen für die laufende oder kommende Woche bitte bei ihrem Sozialpädagogen oder der Küche melden.</p>'; // KIOSK_COMPUTER
 				break;
+            default:
+                $welche_woche = "ERROR";
 		}
 		
 		// beginnt output-buffering
@@ -132,7 +134,9 @@ function Bestell_Formular ( $modus ) { // $modus = 'teilnehmer', 'saeule', 'nach
 								{
 									if ( $logged_in ) // User ist eingeloggt
 									{
-										echo "<p><b>Kategorie:</b> $Kategorie</p><p><b>Name:</b> $Name</p>"; 
+										/** @noinspection PhpUndefinedVariableInspection */
+										/** @noinspection PhpUndefinedVariableInspection */
+										echo "<p><b>Kategorie:</b> $Kategorie</p><p><b>Name:</b> $Name</p>";
 									} 
 									else // nicht eingeloggt
 									{
@@ -589,6 +593,10 @@ function Woche_Ausgabe ( $woche ) { // $woche = laufende/kommende/ueber
 					$Freitag = date('d.m.', strtotime('Friday +1 week'));
 			}
 			break;
+        default:
+            $KW      = "ERROR";
+            $Montag  = "ERROR";
+            $Freitag = "ERROR";
 	}
 	
 	$html = "KW $KW: $Montag ~ $Freitag";
@@ -665,7 +673,8 @@ function Tabelle_Erstellen ( $modus = 'speiseplan', $KW = 0) { // $modus = 'spei
 			) $charset_collate;";
 	}
 	
-	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+//	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+	require_once( $_SERVER["DOCUMENT_ROOT"] . 'wp-admin/includes/upgrade.php' );
 	dbDelta( $SQL );
 	
 	return $table;

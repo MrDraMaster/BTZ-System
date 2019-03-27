@@ -62,7 +62,8 @@ function IU_Tabelle_Erstellen ( $modus = 'namen', $KW = 0 ) {// default: Namensl
 			) $charset_collate;";
 	}
 
-	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+//	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+	require_once( $_SERVER["DOCUMENT_ROOT"] . 'wp-admin/includes/upgrade.php' );
 	dbDelta( $SQL );
 
 	return $table;

@@ -88,6 +88,8 @@ function wer_hat_nicht_bestellt ( $Kategorie ) {
 			case 'Gesamt':
 				$mail = 'essen-extern-btz-jena@faw.de';
 				break;
+			default:
+				$mail = "ERROR";
 		}
 		
 		$betreff = 'Fehlende Essensbestellungen für die kommende Woche [KW '.$KW.']';
