@@ -1,0 +1,110 @@
+/**
+ * Add any custom CSS here.
+ *
+ * This file will be loaded after all other theme stylesheets.
+ */
+
+.tabellenbox {
+	float: left;
+	width: 16%;
+	height: 200px;
+	font-size: larger;
+	font-weight: bold;
+	
+}
+
+h1>a {
+	color: blue;
+}
+h1>a:hover {
+	text-decoration: underline;
+}
+
+.kategoriebox {
+	width: 80%;
+}
+
+.page-id-293 #header,
+.page-id-293 #footer,
+.page-id-293 #sidebar_bottom,
+.page-id-293 .copyright-developer,
+.page-id-293 .navbar {
+	display: none
+}
+
+.speisekarte-tabelle,
+.bestellliste-tabelle {
+	font-size: larger;
+}
+
+/* .speisekarte-tabelle table thead tr th+th, */
+.speisekarte-tabelle table tbody tr td+td {
+	border-left-style: solid;
+	border-left-color: #af0917;
+	border-left-width: 3px;
+}
+
+.speisekarte-tabelle th {
+	width: 17%;
+}
+
+.speisekarte-tabelle th:first-of-type {
+	width: 15%;
+}
+
+.bestellliste-tabelle th {
+	width: 12%
+}
+
+.speisekarte-tabelle thead th,
+.speisekarte-tabelle tfoot th,
+.bestellliste-tabelle thead th,
+.bestellliste-tabelle tfoot th {
+	background-color: #af0917;
+	color: white;
+}
+
+.aktive-tabelle tbody td {
+	background-color: #fddadd;
+}
+
+.speisekarte-tabelle td.even {
+	background-color: #ffecef;
+}
+
+/* CSS um Bestellungserfolgtext nach 15s zu verstecken
+ * source: https://stackoverflow.com/questions/21993661/css-auto-hide-elements-after-5-seconds
+ * Anfang: */
+#Erfolg-Text {
+    -moz-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 15s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+/* Ende */
+
+/* verzögerter Übergang für Menüleiste ~> Touchscreen */
+.menu-item-has-children {
+	transition-delay: 5s;
+}
+
+/* Ende */
